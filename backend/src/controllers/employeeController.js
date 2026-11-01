@@ -211,7 +211,7 @@ const getOrganization = async (req, res) => {
 };
 const getProfile = async (req, res) => {
   try {
-    const employee = await Employee.findById(req.params.id).select("-password");
+    const employee = await Employee.findById(req.user.id).select("-password");
 
     if (!employee) {
       return res.status(404).json({
