@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout/Layout";
-import DashboardCard from "../components/cards/DashboardCard";
+import DashboardCard from "../components/Cards/DashboardCard";
 import DashboardCharts from "../components/Dashboard/DashboardCharts";
 import { getDashboardStats } from "../services/dashboardService";
 import { getEmployees } from "../services/employeeService";
@@ -78,70 +78,3 @@ function Dashboard() {
 }
 
 export default Dashboard;
-
-
-
-
-
-
-
-// import { useEffect, useState } from "react";
-// import Layout from "../components/Layout/Layout";
-// import DashboardCard from "../components/Cards/DashboardCard";
-// import { getDashboardStats } from "../services/dashboardService";
-// import "../styles/Dashboard.css";
-
-
-// function Dashboard() {
-//   const [stats, setStats] = useState({
-//     totalEmployees: 0,
-//     activeEmployees: 0,
-//     inactiveEmployees: 0,
-//     departmentCount: 0,
-//   });
-
-//   useEffect(() => {
-//     loadDashboard();
-//   }, []);
-
-//   const loadDashboard = async () => {
-//     try {
-//       const res = await getDashboardStats();
-//       setStats(res.data);
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   };
-
-//   return (
-//     <Layout>
-//   <div className="dashboard">
-//     <h2 className="dashboard-title">Dashboard</h2>
-
-//     <div className="card-container">
-//       <DashboardCard
-//         title="Total Employees"
-//         value={stats.totalEmployees}
-//       />
-
-//       <DashboardCard
-//         title="Active Employees"
-//         value={stats.activeEmployees}
-//       />
-
-//       <DashboardCard
-//         title="Inactive Employees"
-//         value={stats.inactiveEmployees}
-//       />
-
-//       <DashboardCard
-//         title="Departments"
-//         value={stats.departmentCount}
-//       />
-//     </div>
-//   </div>
-// </Layout>
-//   );
-// }
-
-// export default Dashboard;

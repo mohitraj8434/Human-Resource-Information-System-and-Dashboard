@@ -1,3 +1,7 @@
+
+
+
+import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Login from "./pages/Login";
@@ -11,6 +15,7 @@ import ViewEmployee from "./pages/ViewEmployee";
 import ChangePassword from "./pages/ChangePassword";
 function App() {
   return (
+
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/dashboard" element={<Dashboard />} />
@@ -22,6 +27,7 @@ function App() {
       <Route path="/employees/view/:id" element={<ViewEmployee />} />
       <Route path="/change-password" element={<ChangePassword />} />
     </Routes>
+
   );
 }
 
