@@ -1,0 +1,49 @@
+.add-employee-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.add-employee-container h2 {
+  margin-bottom: 20px;
+}
+
+.employee-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.employee-form input,
+.employee-form select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.employee-form button {
+  grid-column: span 2;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.employee-form button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+  .employee-form {
+    grid-template-columns: 1fr;
+  }
+
+  .employee-form button {
+    grid-column: span 1;
+  }
+}

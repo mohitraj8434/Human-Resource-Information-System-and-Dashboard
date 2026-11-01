@@ -1,0 +1,29 @@
+.organization-container {
+  width: 100%;
+}
+
+.organization-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.organization-table th,
+.organization-table td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.organization-table th {
+  background: #2563eb;
+  color: white;
+}
+
+@media (max-width:768px){
+
+.organization-table{
+display:block;
+overflow-x:auto;
+}
+
+}

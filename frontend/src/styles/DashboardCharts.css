@@ -1,0 +1,66 @@
+
+.dashboard-charts {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin-top: 26px;
+}
+
+.chart-card {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 22px 20px 16px;
+  background: #ffffff;
+  border: 1px solid #dce4ef;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.02);
+}
+
+.chart-card h3 {
+  margin: 0 0 12px;
+  color: #0f172a;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.status-chart-card {
+  height: 400px;
+}
+
+.department-chart-card {
+  height: 390px;
+}
+
+.chart-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.chart-card .recharts-legend-item-text {
+  margin-left: 4px;
+}
+
+@media (max-width: 768px) {
+  .chart-card {
+    padding: 16px 10px;
+  }
+
+  .status-chart-card {
+    height: 340px;
+  }
+
+  .department-chart-card {
+    height: 350px;
+  }
+
+  .chart-card h3 {
+    font-size: 16px;
+    padding-left: 6px;
+  }
+}
